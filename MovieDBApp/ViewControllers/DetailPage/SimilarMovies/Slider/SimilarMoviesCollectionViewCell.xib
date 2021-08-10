@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="similarMoviesSliderCell" id="gTV-IL-0wX" customClass="SimilarMoviesCollectionViewCell" customModule="MovieDBApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="150" height="200"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="150" height="200"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6fX-fR-ctV">
+                        <rect key="frame" x="10" y="10" width="130" height="140"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mFj-GJ-cc6">
+                        <rect key="frame" x="10" y="152" width="130" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="ct6-9Q-OhM"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BKK-CU-0Dm">
+                        <rect key="frame" x="10" y="173" width="130" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="zsm-GL-7DW"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="BKK-CU-0Dm" secondAttribute="trailing" constant="10" id="Ary-Hp-Xf0"/>
+                <constraint firstItem="mFj-GJ-cc6" firstAttribute="top" secondItem="6fX-fR-ctV" secondAttribute="bottom" constant="2" id="E5F-YL-R5G"/>
+                <constraint firstAttribute="bottom" secondItem="6fX-fR-ctV" secondAttribute="bottom" constant="50" id="JCs-Kw-PX7"/>
+                <constraint firstItem="BKK-CU-0Dm" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="Jl0-Di-fuQ"/>
+                <constraint firstAttribute="trailing" secondItem="6fX-fR-ctV" secondAttribute="trailing" constant="10" id="NsZ-wt-CPw"/>
+                <constraint firstItem="6fX-fR-ctV" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="Rao-Rl-hdR"/>
+                <constraint firstItem="mFj-GJ-cc6" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="Tm0-y5-dhi"/>
+                <constraint firstItem="6fX-fR-ctV" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="YZS-uf-rQN"/>
+                <constraint firstAttribute="trailing" secondItem="mFj-GJ-cc6" secondAttribute="trailing" constant="10" id="ebl-34-RTG"/>
+                <constraint firstItem="BKK-CU-0Dm" firstAttribute="top" secondItem="mFj-GJ-cc6" secondAttribute="bottom" constant="1" id="gjE-JS-8B6"/>
+            </constraints>
+            <size key="customSize" width="208" height="210"/>
+            <connections>
+                <outlet property="movieImageView" destination="6fX-fR-ctV" id="g0n-5q-LRj"/>
+                <outlet property="movieReleaseDateLabel" destination="BKK-CU-0Dm" id="L2b-pi-yPu"/>
+                <outlet property="movieTitleLabel" destination="mFj-GJ-cc6" id="3hu-BS-x3L"/>
+            </connections>
+            <point key="canvasLocation" x="114.49275362318842" y="175.44642857142856"/>
+        </collectionViewCell>
+    </objects>
+</document>
